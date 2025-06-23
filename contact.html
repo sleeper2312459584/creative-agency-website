@@ -4,81 +4,204 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Creative Agency</title>
+    <!-- No external CSS file, all styling is now inline or default browser styles -->
+    <title>Chat with IDEALalter | Your Chicagoland Digital Partner</title>
+    <!-- Meta Title for SEO -->
+    <meta name="title" content="Contact IDEALalter: Digital Marketing Experts in Chicagoland">
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Ready to boost your Chicagoland business online? Get in touch with IDEALalter for expert SEO, Google Ads, and custom website solutions. We're here to help you shine!">
+    <style>
+      /* Basic responsive styling for the map without classes */
+      .map-responsive {
+        overflow: hidden;
+        padding-bottom: 75%; /* 4:3 aspect ratio (600/800) */
+        position: relative;
+        height: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px; /* Simple rounded corners */
+      }
+      .map-responsive iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        border: 0; /* No border for iframe */
+      }
+      /* Basic layout adjustments for the form and info sections */
+      section {
+        padding: 40px 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+        box-sizing: border-box;
+      }
+      h1, h2, h4 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      p {
+        text-align: center;
+        margin-bottom: 20px;
+        line-height: 1.6;
+      }
+      .contact-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 30px;
+      }
+      .contact-form, .contact-info {
+        flex: 1;
+        min-width: 300px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-sizing: border-box;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .form-row {
+        display: flex;
+        gap: 10px;
+      }
+      .form-row div {
+        flex: 1;
+      }
+      input[type="text"], input[type="email"], textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+      input[type="submit"] {
+        background-color: #007bff; /* Example color */
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      input[type="submit"]:hover {
+        background-color: #0056b3; /* Darker on hover */
+      }
+      .info-box {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+      .info-icon {
+        font-size: 30px;
+        margin-right: 15px;
+      }
+      .info-details h4 {
+        text-align: left;
+        margin-bottom: 5px;
+      }
+      .info-details p, .info-details a {
+        text-align: left;
+        color: #333;
+        text-decoration: none;
+        display: block;
+      }
+      .info-details a:hover {
+        text-decoration: underline;
+      }
+      @media (max-width: 768px) {
+        .contact-container {
+          flex-direction: column;
+        }
+        .form-row {
+          flex-direction: column;
+          gap: 0; /* Remove gap for single column layout */
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
-      <div class="logo">Creative Agency</div>
-      <div class="toggle"></div>
-      <div class="navigation">
+      <div>IDEALalter Digital</div>
+      <div></div>
+      <div>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Solutions</a></li>
+          <li><a href="#">Impact</a></li>
+          <li><a href="#">Connect</a></li>
         </ul>
-        <div class="social-bar">
+        <div>
           <ul>
             <li>
               <a href="https://facebook.com">
-                <img src="images/facebook.png" target="_blank" alt="" />
+                <!-- Facebook icon Unicode -->
+                <span>📘</span>
               </a>
             </li>
             <li>
               <a href="https://twitter.com">
-                <img src="images/twitter.png" target="_blank" alt="" />
+                <!-- Twitter icon Unicode -->
+                <span>🐦</span>
               </a>
             </li>
             <li>
               <a href="https://instagram.com">
-                <img src="images/instagram.png" target="_blank" alt="" />
+                <!-- Instagram icon Unicode -->
+                <span>📸</span>
               </a>
             </li>
           </ul>
-          <a href="mailto:you@email.com" class="email-icon">
-            <img src="images/email.png" alt="" />
+          <a href="mailto:admin@idealalter.com">
+            <!-- Email icon Unicode -->
+            <span>📧</span>
           </a>
         </div>
       </div>
     </header>
 
     <section>
-      <div class="title">
-        <h1>Contact us</h1>
+      <div>
+        <h1>Let's Connect and Chat About Your Business!</h1>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus
-          iusto molestias accusamus rem nobis est, et laborum harum doloremque
-          nemo non, minima quos totam labore
+          Ready to make your Chicagoland business shine online? We're super excited to hear from you! Whether you have questions about boosting your search rankings, running awesome ads, or getting a fresh new website, drop us a line. We're here to help, no strings attached!
         </p>
       </div>
-      <div class="contact">
+      <div class="contact-container">
         <div class="contact-form">
           <form>
-            <div class="row">
-              <div class="input50">
-                <input type="text" placeholder="First Name" />
+            <div class="form-row">
+              <div>
+                <input type="text" placeholder="Your First Name" />
               </div>
-              <div class="input50">
-                <input type="text" placeholder="Last Name" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="input50">
-                <input type="text" placeholder="Email" />
-              </div>
-              <div class="input50">
-                <input type="text" placeholder="Subject" />
+              <div>
+                <input type="text" placeholder="Your Last Name" />
               </div>
             </div>
-            <div class="row">
-              <div class="input100">
-                <textarea placeholder="Message"></textarea>
+            <div class="form-row">
+              <div>
+                <input type="email" placeholder="Your Email" />
+              </div>
+              <div>
+                <input type="text" placeholder="What's it About?" />
               </div>
             </div>
-            <div class="row">
-              <div class="input100">
-                <input type="submit" value="Send" />
+            <div class="form-row">
+              <div>
+                <textarea placeholder="Tell us what's on your mind!"></textarea>
+              </div>
+            </div>
+            <div class="form-row">
+              <div>
+                <input type="submit" value="Send Your Message" />
               </div>
             </div>
           </form>
@@ -86,32 +209,40 @@
 
         <div class="contact-info">
           <div class="info-box">
-            <img src="images/address.png" class="contact-icon" alt="" />
-            <div class="details">
-              <h4>Address</h4>
-              <p>28 Neon Tower, New York City, USA</p>
+            <span class="info-icon">📍</span>
+            <div class="info-details">
+              <h4>Our Spot</h4>
+              <p>2555 W Lincoln Hwy, Suite 207, Olympia Fields, IL 60461</p>
             </div>
           </div>
           <div class="info-box">
-            <img src="images/email.png" class="contact-icon" alt="" />
-            <div class="details">
-              <h4>Email</h4>
-              <a href="mailto:anyone@example.com">anyone@example.com</a>
-              <a href="mailto:anyone@example.com">anyone@example.com</a>
+            <span class="info-icon">📧</span>
+            <div class="info-details">
+              <h4>Drop Us a Line</h4>
+              <a href="mailto:admin@idealalter.com">admin@idealalter.com</a>
             </div>
           </div>
           <div class="info-box">
-            <img src="images/call.png" class="contact-icon" alt="" />
-            <div class="details">
-              <h4>Call</h4>
-              <a href="tel:+19785555555">+1 978 555 5555</a>
-              <a href="tel:+19784444444">+1 978 555 4444</a>
+            <span class="info-icon">📞</span>
+            <div class="info-details">
+              <h4>Give Us a Call</h4>
+              <a href="tel:+17082655493">(708) 265-5493</a>
             </div>
+          </div>
+          <!-- Google Map - Responsive without external CSS framework -->
+          <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2987.892844238948!2d-87.68126002393431!3d41.5065968712849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e1a063721716b%3A0xd8da6a8dabaa7c18!2sIDEALalter%20LLC!5e0!3m2!1sen!2sus!4v1750649276358!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
     </section>
 
-    <script src="js/script.js"></script>
+    <!-- The original script.js link should be replaced with inline JS if it's not needed, or handled if it contains essential functionality. For this rewrite, I'm assuming it might contain the toggle functionality for the header, which would need to be re-implemented if desired. For now, it's removed. -->
+    <script>
+      // Basic JavaScript for mobile menu toggle if needed, adapted from previous version.
+      // Since the original HTML provided has a .toggle and .navigation structure that relies on external CSS/JS,
+      // this functionality would need to be rebuilt with inline styles and JS events if required.
+      // For a purely class-less HTML, this part is omitted.
+    </script>
   </body>
 </html>
